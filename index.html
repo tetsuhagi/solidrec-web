@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SolidRec — 長時間ボイスレコーダー</title>
+<meta name="description" content="録音が途中で消えないボイスレコーダー。1分ごとに分割保存し、あなた自身の Google ドライブへ自動でバックアップします。">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap" id="root" data-lang="ja">
+  <nav class="site">
+    <span class="brand">SolidRec</span>
+    <a href="./">ホーム</a>
+    <a href="./terms.html">利用規約</a>
+    <a href="./privacy.html">プライバシーポリシー</a>
+    <a href="./contact.html">お問い合わせ</a>
+  </nav>
+
+  <div class="ja">
+    <header class="page">
+      <h1>録音が、途中で消えない。</h1>
+      <p class="lede">
+        SolidRec は長時間録音のためのボイスレコーダーです。
+        アプリが強制終了しても、電池が切れても、それまでの録音は残ります。
+      </p>
+      <div class="langbar" role="group" aria-label="言語">
+        <button type="button" data-set="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-set="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <article>
+      <p>
+        一般的な録音アプリは、録音を停止して初めてファイルを書き出します。
+        そのため停止前にアプリが落ちると、それまでの録音がまるごと失われます。
+      </p>
+      <p>
+        SolidRec は<strong>1 分ごとに区切って確定させながら</strong>録ります。
+        確定した音声は順次<strong>あなた自身の Google ドライブへ自動で送られ</strong>、
+        送った先の中身が端末のものと 1 バイトも違わないことを確かめてから「保全済み」と数えます。
+      </p>
+      <p>
+        音声は<strong>端末とあなたのドライブの間だけ</strong>を流れます。
+        開発者のサーバーは存在せず、個人情報も一切取得しません。
+      </p>
+    </article>
+
+    <div class="cards">
+      <a class="card" href="./terms.html"><h3>利用規約</h3><p>ご利用にあたっての条件</p></a>
+      <a class="card" href="./privacy.html"><h3>プライバシーポリシー</h3><p>情報の取り扱いについて</p></a>
+      <a class="card" href="./contact.html"><h3>お問い合わせ</h3><p>ご質問・不具合のご報告</p></a>
+    </div>
+  </div>
+
+  <div class="en">
+    <header class="page">
+      <h1>Recordings that don&rsquo;t vanish.</h1>
+      <p class="lede">
+        SolidRec is a voice recorder built for long sessions. If the app is force-quit
+        or the battery dies, everything recorded up to that moment is still there.
+      </p>
+      <div class="langbar" role="group" aria-label="Language">
+        <button type="button" data-set="ja" aria-pressed="false">日本語</button>
+        <button type="button" data-set="en" aria-pressed="true">English</button>
+      </div>
+    </header>
+
+    <article>
+      <p>
+        Most recorders write the file only when you press stop. If the app dies before
+        that, the entire recording is lost.
+      </p>
+      <p>
+        SolidRec finalizes the audio <strong>once every minute as it records</strong>.
+        Each finished piece is uploaded to <strong>your own Google Drive</strong>, and is
+        counted as preserved only after the copy in the cloud is verified byte-for-byte
+        against the one on your device.
+      </p>
+      <p>
+        Audio travels only between your device and your Drive. There is no developer
+        server, and no personal information is collected.
+      </p>
+    </article>
+
+    <div class="cards">
+      <a class="card" href="./terms.html"><h3>Terms of Use</h3><p>Conditions of use</p></a>
+      <a class="card" href="./privacy.html"><h3>Privacy Policy</h3><p>How information is handled</p></a>
+      <a class="card" href="./contact.html"><h3>Contact</h3><p>Questions and bug reports</p></a>
+    </div>
+  </div>
+
+  <footer>SolidRec &middot; <span class="ja">開発</span><span class="en">Developed by</span> MedialabTH</footer>
+</div>
+<script src="./lang.js"></script>
+</body>
+</html>
